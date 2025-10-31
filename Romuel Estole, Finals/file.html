@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romuel S Estole | Portfolio</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS File -->
+  <link rel="stylesheet" href="file.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <h1>Romuel Estole</h1>
+    <ul>
+      <li><button onclick="showSection('home')">Home</button></li>
+      <li><button onclick="showSection('about')">About</button></li>
+      <li><button onclick="showSection('contact')">Contact</button></li>
+    </ul>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="active">
+    <div class="home-text">
+      <h2>Romuel Estole</h2>
+      <h3>Future | UI/UX Designer | IT Specialist</h3>
+      <p>
+        I’m an aspiring IT expert who loves building simple, functional, and easy-to-use websites. 
+        I enjoy finding solutions through coding and continuously learning new tools and technologies 
+        to improve my web development abilities and skills.
+      </p>
+    </div>
+    <img src="owen.jpg" alt="Romuel Estole" class="profile-pic">
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="info-section">
+      <h3>Personal Details</h3>
+      <ul>
+        <li>Age: 19 years old</li>
+        <li>Height: 5'9"</li>
+        <li>Weight: 64 kg</li>
+        <li>Address: Manggalang Tulo-tulo, Sariaya, Quezon</li>
+        <li>Gender: Male</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h3>Preferred Skills</h3>
+      <ul>
+        <li>Programming Languages: Python</li>
+        <li>Web Development: Front-End Design, Responsive Layouts</li>
+        <li>Digital Design: UI/UX Wireframing, Canva</li>
+        <li>Technical Skills: Troubleshooting, Computer Assembly</li>
+        <li>Soft Skills: Time Management, Teamwork</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Primary:</strong> Manggalang Tulo-tulo Elementary School</li>
+        <li><strong>Junior High:</strong> Sta. Catalina National High School</li>
+        <li><strong>Senior High:</strong> Sta. Catalina National High School</li>
+        <li><strong>College:</strong> College of Sciences, Technology and Communication INC</li>
+        <li><strong>Course:</strong> Bachelor of Science in Information Technology</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h3>Excellence / Awards</h3>
+      <ul>
+        <li>With Honor — Academic excellence in Elementary</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Listening to music</li>
+        <li>Watching movies</li>
+        <li>Hanging out with friends</li>
+        <li>Playing Basketball</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h3>Projects Accomplished</h3>
+      <ul>
+        <li>Attended IT Department Seminars</li>
+        <li>Project and Career Organizer</li>
+        <li>Creative Portfolio Website</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📞 09482545937</p>
+    <p>📧 20240091@cstc.edu.ph</p>
+    <p>💬 Romuel Estole</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Romuel S Estole</p>
+    <p>Designed with ❤️</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(sectionId).classList.add("active");
+    }
+  </script>
+</body>
+</html>
